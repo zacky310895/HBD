@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="video">
+            <video id="myVideo" height="400" width="300">
+                <source src="WhatsApp Video 2024-01-15 at 21.08.40_262763d3.mp4" type="video/mp4">
+            </video>
+
+            <button onclick="playVid()" type="button">Pijit Yang</button>
+            <button onclick="pauseVid()" type="button">Jeda</button>
+
+            <script> 
+                let vid = document.getElementById("myVideo"); 
+                
+                function playVid() { 
+                  vid.play(); 
+                }
+                function pauseVid(){
+                    vid.pause();
+                }
+        
+                </script> 
+        </div>
+    </header>
+</body>
+</html>
